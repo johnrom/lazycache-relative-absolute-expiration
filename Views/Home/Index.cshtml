@@ -1,0 +1,13 @@
+﻿@model CachedItemsResult;
+
+@{
+    Layout = null;
+}
+
+    <div class="text-center">
+        <ul>
+            <li>Relative, with Token, Last Created: @Model.Relative.Created</li>
+            <li>Absolute, Last Created: @Model.Absolute.Created</li>
+        </ul>
+        <a asp-action="Refresh">Clear Cache</a>
+    </div>
